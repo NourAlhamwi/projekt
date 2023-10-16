@@ -1,0 +1,16 @@
+:root{
+    --padding_around:40px;
+    --border_radius:5px;
+
+    --box_shadow:4px 4px 0px black;
+    --text_padding:15px 20px;
+
+    --h1_font_sz:5vw;
+    --p_font_sz:18px;
+    
+
+    --blue_color:#ccf4fe;
+    --pig_pink_color:#ffc0c0;
+    --pink_color:#ffc6f8;
+    --gray_header_color:#c8c8c9;
+}
