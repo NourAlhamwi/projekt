@@ -5,6 +5,10 @@
     --box_shadow:4px 4px 0px black;
     --text_padding:15px 20px;
 
+
+    --gap_between_container:30px;
+    --gap_between_cells:20px;
+
     --h1_font_sz:5vw;
     --p_font_sz:18px;
     
