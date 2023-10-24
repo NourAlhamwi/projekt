@@ -37,7 +37,8 @@
 }
 
 body {
-    background-color: antiquewhite;
+    background-image: url('images/mapBackgroundComp.jpg');
+    background-size: contain;
     font-family: helvetica;
     padding: var(--padding_around);
     font-family: Roboto;
