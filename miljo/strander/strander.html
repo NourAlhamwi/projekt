@@ -9,13 +9,127 @@
 </head>
 
 <body>
+    <header class="pc">
+        <a href="#">MALMÖ BY FOOT</a>
+    </header>
+    <nav class="main-nav-pc">
+        <div class="item-container">
+            <a href="#">MAT & DRYCK</a>
+            <nav class="subnav">
+                <a href="#">Restauranger</a>
+                <a href="#">Caféer</a>
+            </nav>
+        </div>
+        <div class="item-container">
+            <a href="#">MILJÖ</a>
+            <nav class="subnav">
+                <a href="#">Parker</a>
+                <a href="#">Stränder</a>
+            </nav>
+        </div>
+        <div class="item-container">
+            <a href="#">KULTUR</a>
+            <nav class="subnav">
+                <a href="../sevardigheter/index.html">Sevärheter</a>
+                <a href="../museer/museer.html">Museer</a>
+            </nav>
+        </div>
+        <div class="item-container">
+            <a href="#">KUL I MALMÖ</a>
+            <nav class="subnav">
+                <a href="#">Hidden Gems</a>
+                <a href="#">Shopping</a>
+                <a href="#">Malmö Perspektiv</a>
+            </nav>
+        </div>
+        <div class="item-container">
+            <a href="#">LOKALT</a>
+            <nav class="subnav">
+                <a href="#">Aktiviteter</a>
+                <a href="../nattliv/nattliv.html">Nattliv</a>
+            </nav>
+        </div>
+    </nav>
+    <header class="tablet">
+        <a href="#">MALMÖ BY FOOT</a>
+    </header>
+    <input type="checkbox" id="show-subnav">
+    <label for="show-subnav" id="make-background-gray"></label>
+    <div class="hamburger-menu-container">
+        <label for="show-subnav" class="hamburger-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </div>
+    <nav class="main-nav-tablet" id="tablet-nav">
+        <header class="tablet-nav-header">
+            <a href="#">MALMÖ BY FOOT</a>
+        </header>
+        <div id="items-wrapper">
+            <div class="item-container">
+                <a href="#">HEM</a>
+            </div>
+            <div class="item-container" id="subnav1">
+                <a href="#subnav1">MAT & DRYCK</a>
+                <nav class="subnav">
+                    <a href="#">Restauranger</a>
+                    <a href="#">Caféer</a>
+                </nav>
+                <div class="subnav-disapear">
+                    <a href="#"></a>
+                </div>
+            </div>
+            <div class="item-container" id="subnav2">
+                <a href="#subnav2">MILJÖ</a>
+                <nav class="subnav">
+                    <a href="#">Parker</a>
+                    <a href="#">Stränder</a>
+                </nav>
+                <div class="subnav-disapear">
+                    <a href="#"></a>
+                </div>
+            </div>
+            <div class="item-container" id="subnav3">
+                <a href="#subnav3">KULTUR</a>
+                <nav class="subnav">
+                    <a href="../sevardheter/sevardheter.html">Sevärdheter</a>
+                    <a href="../museer/museer.html">Museer</a>
+                </nav>
+                <div class="subnav-disapear">
+                    <a href="#"></a>
+                </div>
+            </div>
+            <div class="item-container" id="subnav4">
+                <a href="#subnav4">KUL I MALMÖ</a>
+                <nav class="subnav">
+                    <a href="#">Aktiviteter</a>
+                    <a href="../nattliv/nattliv.html">Nattliv</a>
+                </nav>
+                <div class="subnav-disapear">
+                    <a href="#"></a>
+                </div>
+            </div>
+            <div class="item-container" id="subnav5">
+                <a href="#subnav5">LOKALT</a>
+                <nav class="subnav">
+                    <a href="#">Hidden Gems</a>
+                    <a href="#">Shopping</a>
+                    <a href="#">Malmö Perspektiv</a>
+                </nav>
+                <div class="subnav-disapear">
+                    <a href="#"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
     <!-- First section -->
     <section id="first">
         <!-- Container 1 -->
         <div>
             <h1 class="bordershadow">STRÄNDER</h1>
-            <img src="images/image.jpg" class="bordershadow" alt="Klagshamnsstranden">
+            <img src="images/klagshamnStrand1.jpg" class="bordershadow" alt="Klagshamnsstranden">
         </div>
         <!-- Container 2 -->
         <div>
@@ -47,7 +161,7 @@
         <!-- Conatiner 1 -->
         <div>
             <h2 class="bordershadow">RIBERSBORGSSTRANDEN/ RIBBAN</h2>
-            <div class="bordershadow">
+            <div class="bordershadow img">
                 <p>
                     Photo by <a
                         href="https://unsplash.com/@jchatelain?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Julien
@@ -104,7 +218,7 @@
                     <li>Restauranger</li>
                 </ul>
             </div>
-            <img src="images/image.jpg" class="bordershadow" alt="Sundspromenaden">
+            <img src="images/sundsprommenaden1.jpg" class="bordershadow" alt="Sundspromenaden">
         </div>
     </section>
 
@@ -113,7 +227,7 @@
     <!-- Sec 4 -->
     <section id="fourth">
         <!-- Sec 4 Con 1 -->
-        <img src="images/image.jpg" class="bordershadow" alt="Sibbarpsstranden">
+        <img src="images/sibbarpStrand1.jpg" class="bordershadow" alt="Sibbarpsstranden">
         <!-- Sec 4 Con 2 -->
         <div>
             <h2 class="bordershadow">SIBBARPSSTRANDEN</h2>
@@ -154,7 +268,7 @@
             </div>
         </div>
         <!-- Sec 5 Con 2 -->
-        <img src="images/image.jpg" class="bordershadow" alt="Scaniabadet">
+        <img src="images/scaniabadet1.jpg" class="bordershadow" alt="Scaniabadet">
     </section>
 </body>
 

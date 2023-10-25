@@ -110,6 +110,8 @@ img {
 #first > div:first-child img {
     flex-basis: 0;
     flex-grow: 1;
+    width: 100%;
+    height: 100%;
 }
 
 #first > div:last-child > div {
@@ -149,7 +151,7 @@ img {
 #second > div:last-child {
     flex-basis: 0;
     flex-grow: 1;
-    background-image: url('images/image.jpg');
+    background-image: url('images/kungsparken1.jpg');
     background-size: cover;
     background-position: center;
     padding: var(--text_padding);
@@ -167,21 +169,31 @@ img {
 
 /* Sec 3 */
 #third {
-    display: flex;
-    gap: var(--gap_between_con);
     height: 650px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap_between_cells);
 }
 
-#third > div:first-child {
+#third > div {
+    display: flex;
+    gap: var(--gap_between_con);
+}
+#third > div > * {
     flex-basis: 0;
     flex-grow: 1;
+}
+
+#third > div > div:first-child {
+    flex-basis: 0;
+    flex-grow: 1.5;
     background-color: var(--light_green_color);
     display: flex;
     flex-direction: column;
     gap: var(--gap_between_cells);
 }
 
-#third > div:nth-of-type(2) {
+#third > div > div:nth-of-type(2) {
     flex-basis: 0;
     flex-grow: 2;
     display: flex;
@@ -189,28 +201,29 @@ img {
     gap: var(--gap_between_cells);
 }
 
-#third > div:nth-of-type(2) > div {
+#third > div > div:nth-of-type(2) > div {
     flex-basis: 0;
-    flex-grow: 1;
+    flex-grow: 0.5;
     display: flex;
     flex-direction: row;
     gap: var(--gap_between_cells);
 }
 
-#third > div:nth-of-type(2) > div > img {
-    width: 60%;
+#third > div >  img {
+    width: 40%;
+    /* height: 100%; */
 }
 
-#third > div:nth-of-type(2) > div > p {
+#third > div > div:nth-of-type(2) > div > p {
     background-color: var(--white_color);
     flex-basis: 0;
     flex-grow: 1;
 }
 
-#third > div:last-child  {
+#third > div > div:last-child  {
     flex-basis: 0;
-    flex-grow: 1;
-    background-image: url('images/image.jpg');
+    flex-grow: 0.5;
+    background-image: url('images/slottsparken2.jpg');
     background-size: cover;
     background-position: center;
     padding: var(--text_padding);
@@ -220,7 +233,7 @@ img {
     font-size: 10px;
 }
 
-#third > div:last-child a {
+#third > div > div:last-child a {
     /* text-decoration: none; */
     color: black;
 }
@@ -257,7 +270,7 @@ img {
 }
 
 #fourth > img {
-    width: 40%;
+    width: 20%;
 }
 
 /* Sec 5 */
@@ -268,7 +281,7 @@ img {
 }
 
 #fifth > img {
-    width: 50%;
+    width: 40%;
 }
 
 #fifth > div {
@@ -295,6 +308,13 @@ img {
     gap: var(--gap_between_cells);
 }
 
+@media (max-width: 1530px) {
+    #third, #fourth {
+        height: auto;
+        min-height: 650px;
+    }
+}
+
 
 @media (max-width: 1360px) {
     h2 {font-size: 2rem;}
@@ -305,7 +325,7 @@ img {
 }
 
 @media (max-width: 1220px) {
-    #third {
+    #fifth {
         height: auto;
         min-height: 650px;
     }
