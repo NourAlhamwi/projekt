@@ -62,7 +62,7 @@ h1, h2 {
 }
 
 h1 {
-    background-color: var(--kul_i_mamlo_color);
+    background-color: var(--lokalt_color);
     font-size: calc(var(--h1_font_sz) - 1rem);
     text-align: center;
 }
@@ -187,11 +187,11 @@ hr {
 
 .flex1 > div {
     flex-basis: 0;
-    flex-grow: 1;
 }
 
 /* Sec 2 Con 1 */
 .flex1 > div:first-child {
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     gap: var(--gap_between_cells);
@@ -199,6 +199,7 @@ hr {
 
 .flex1 > div:first-child > img{
     height: 40%;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -210,6 +211,7 @@ hr {
 
 /* Sec 2 Con 2 */
 .flex1 > div:last-child {
+    flex-grow: 1.5;
     display: flex;
     flex-direction: column;
     gap: var(--gap_between_cells);
@@ -296,6 +298,7 @@ hr {
 /* Sec 4 */
 #fourth img {
     height: 100%;
+    width: 100%;
 }
 
 @media (max-width: 1330px) {
