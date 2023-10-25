@@ -40,7 +40,7 @@
 body {
     background-image: url('images/mapBackgroundComp.jpg');
     background-size: contain;
-    font-family: 'Roboto Mono', monospace;;
+    font-family: 'Roboto Mono', monospace;
     padding: var(--padding_around);
     font-size: var(--p_font_sz);
 }
