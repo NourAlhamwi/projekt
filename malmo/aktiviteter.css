@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt&family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 :root{
     --padding_around:40px;
     --border_radius:5px;
@@ -40,15 +40,14 @@
 body {
     background-image: url('images/mapBackgroundComp.jpg');
     background-size: contain;
-    font-family: helvetica;
+    font-family: 'Roboto Mono', monospace;;
     padding: var(--padding_around);
-    font-family: Roboto;
     font-size: var(--p_font_sz);
 }
 
 h1, h2 {
     color: var(--header_color);
-    font-family: Prompt;
+    font-family: 'Prompt';
     margin: 0;
     padding: var(--text_padding);
 
